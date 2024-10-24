@@ -75,17 +75,4 @@ app.delete("/listings/:id", async (req,res) => {
     const listing = await Listing.findByIdAndDelete(id);
     console.log(listing);
     res.redirect("/listings");
-})
-
-// app.get("/testlisting",async (req,res) => {
-//     let sampleListing = new Listing({
-//         title: "Tara Bhawan",
-//         description: "Apartment",
-//         price: 1200,
-//         location: "Howrah, West Bengal",
-//         country: "India",
-//     });
-//     await sampleListing.save().catch((err) => console.log(err));
-//     console.log("data saved to db");
-//     res.send("test succesfull");
-// });
+});
