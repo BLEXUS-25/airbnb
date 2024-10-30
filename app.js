@@ -22,7 +22,7 @@ main().then(() => {
     .catch((err) => {
         console.log(err);
     });
-
+    
 app.set("view engine", "ejs");;
 app.set("views", path.join(__dirname, "views"));
 app.use(express.urlencoded({ extended: true }));
