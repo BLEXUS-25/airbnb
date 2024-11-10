@@ -1,3 +1,4 @@
-node_modules
-CLASSROOM
+/node_modules
+/CLASSROOM
 package-lock.json
+/init
