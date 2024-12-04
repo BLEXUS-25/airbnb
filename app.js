@@ -1,3 +1,13 @@
+if(process.env.NODE_ENV != "production") {
+    require('dotenv').config()
+}
+
+// const cloudinary = require('cloudinary').v2;
+// const { CloudinaryStorage } = require('multer-storage-cloudinary');
+
+// console.log(cloudinary);
+// console.log(CloudinaryStorage);
+
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -69,10 +79,6 @@ app.use((req, res, next) => {
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/",userRouter);
-
-app.get("/", (req, res) => {
-    res.send("HOME");
-});
 
 
 app.all("*", (req, res, next) => {
