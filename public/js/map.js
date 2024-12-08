@@ -7,7 +7,6 @@ const map = new mapboxgl.Map({
     center: [88.3629, 22.5744]
 });
 
-console.log(listing.geometry.coordinates)
 
 const marker1 = new mapboxgl.Marker({ color: "red" })
     .setLngLat(listing.geometry.coordinates)
