@@ -36,7 +36,9 @@ body {
     background-color: #ebebeb;
 }
 
-.f-info-socials, .f-info-brand, .f-info-links {
+.f-info-socials,
+.f-info-brand,
+.f-info-links {
     text-align: center;
     width: 100%;
 }
@@ -120,4 +122,10 @@ body {
 .show-card {
     padding-left: 0;
     padding-right: 0;
+}
+
+/* MAP */
+#map {
+    height: 400px;
+    width: 80vh;
 }
